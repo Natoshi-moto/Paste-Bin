@@ -90,6 +90,27 @@ expose truth, not manufacture either innocence or guilt.
    into FINAL.
 8. Record local action receipts and report failures honestly.
 
+## Public pivotal-checkpoint rule
+
+The operator wants pivotal work states backed up online in the public,
+MIT-licensed `Natoshi-moto/Paste-Bin` repository.
+
+Before publishing a checkpoint:
+
+1. define the project/file scope and source branch/HEAD;
+2. exclude credentials, keyring/vault data, local config, raw private sessions,
+   browser/clipboard history, machine identity, caches, dependencies and builds;
+3. run a common-secret-pattern scan and document that it is heuristic;
+4. copy the public-safe source bytes without normalising them;
+5. add a SHA-256 manifest, explicit exclusions, test evidence and nonclaims;
+6. reproduce the relevant tests from the copied tree;
+7. publish on a named checkpoint branch and draft PR unless the operator
+   separately authorises merge;
+8. record the checkpoint URL/commit in the shared RAM heartbeat.
+
+A Paste Bin checkpoint is durable public evidence, not Lab canon, a release,
+security certification, truth, settlement, or automatic promotion.
+
 ## Status vocabulary (RoomFinal-inspired)
 
 Use these labels in explanations when claims harden:
