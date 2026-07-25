@@ -131,7 +131,7 @@ It does not mean removing consent, recourse, ownership, or a kill switch.
 | Evidence packets | **IMPLEMENTED / TESTED elsewhere** | Atomic Linux file store, explicit PILOT/WITNESS/BOTH attachment, `status_authority=NONE`. Storage is permission-bounded, not encrypted by this module. |
 | Encrypted room | **IMPLEMENTED / TESTED** | Real Ed25519 and ChaCha20-Poly1305, canonical replay, scoped receipts/checkpoints. All eleven room tests passed in the final focused audit. |
 | Greywire Drop | **IMPLEMENTED / TESTED** | X25519, HKDF-SHA256, ChaCha20-Poly1305, Ed25519 manifest, deterministic in-memory single-live-output custody. Eight tests passed during this audit. |
-| Connector registry and fixture quarantine | **IMPLEMENTED / TESTED** | 23 inert connectors, zero live endpoints, deterministic ingress state machine. Thirteen tests passed during this audit. |
+| Connector registry and fixture quarantine | **IMPLEMENTED / TESTED** | 25 inert connectors, zero live endpoints, deterministic ingress state machine. Fifteen tests passed during this audit. |
 | LOOM archive + Forge railway | **IMPLEMENTED / TESTED LOCALLY; LIVE CLOUD UNPROVEN** | Capture defaults OFF. A Secret-Service-backed ChaCha20-Poly1305 archive stores canonical exact-byte events in a locked, fsynced, `0600` hash chain. Forge enforces sealed-reference, scrub/hash approval, DeepSeek-first, distinct higher-rank review, deterministic validation, and inert commit proposal. The runtime bridge can call configured external adapters, but no credentialed cloud run is claimed here. No Git execution or publication is implemented. |
 | Browser organ | **IMPLEMENTED LOCAL SCAFFOLD** | User-triggered selected/page excerpts, reviewed voice draft, explicit ChatGPT copy handoff, native messaging. Not installed, signed, or store-published. |
 | Live Nostr/IRC/Discord/Slack/etc. | **SPECIFIED / INERT** | Typed registry metadata and fixture processing only. |
@@ -944,7 +944,7 @@ The registry enforces five non-interchangeable layers:
 | `GATEWAY` | Provides an isolation/control boundary; is not an authority. |
 | `AUTHORITY_EVIDENCE` | Reports scoped evidence; cannot promote it into settlement or canon. |
 
-All 23 current entries are disabled, credential-free, endpoint-free, non-polling
+All 25 current entries are disabled, credential-free, endpoint-free, non-polling
 `INERT_STUB` objects. Only registry inspection and caller-supplied fixture
 processing exist.
 
@@ -958,6 +958,8 @@ processing exist.
 | Discord | Application protocol | Explicit bot/app events and work queues | **INERT.** No user-token automation; minimise intents and content access; sending is human-only. |
 | Slack | Application protocol | App-scoped events, thread-bound work, review queues | **INERT.** App/event scopes only; no workspace scraping; sending is human-only. |
 | WinMX | Application protocol, research-only | Import archival chat fixtures to study resilient room UX | **INERT.** Live networking and downloads forbidden; no revival of unsafe file sharing. |
+| BitTorrent | Application protocol, research-only | Inspect opaque manifest/chunk fixtures and design room-scoped encrypted artifact swarms | **INERT.** DHT, PEX, local discovery, rendezvous, downloading and seeding are forbidden; a matching hash does not establish safety, authorship or licence. |
+| MediaWiki/Wikipedia | Source adapter | Fetch exact public revisions and park gap-aware provenance outside chat | **INERT.** Fixture ingress only; editing and embedded-content execution are forbidden; revision IDs, hashes and patrol state do not establish truth. |
 | GitHub | Application protocol | Issues/PRs as staggered work requests, review bus, optional scrubbed LOOM projections | **INERT.** Commit/push/merge are separate human-approved effects; public repositories are not private channels. |
 | RSS/Atom | Source adapter | News and project feeds parked outside chat | **INERT.** Fetch limits, source timestamps, dedupe, and prompt-injection fencing required. |
 | Email | Application protocol | Explicit mailbox-to-work-item intake and signed/encrypted envelopes | **INERT.** No broad mailbox crawl; send is human-only; attachments quarantine first. |
