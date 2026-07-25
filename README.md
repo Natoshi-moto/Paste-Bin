@@ -30,6 +30,7 @@ A checkpoint is **not**:
 
 | Checkpoint | Captured | Subject | Evidence |
 |---|---|---|---|
+| [`2026-07-25-nexus-assistant-pivotal-002`](checkpoints/2026-07-25-nexus-assistant-pivotal-002/) | 2026-07-25 dual-seat | NEXUS Assistant committed spine + bus log + re-verified tests | 123 app + 4 native-host; source HEAD after public sandbox commit |
 | [`2026-07-25-nexus-assistant-pivotal-001`](checkpoints/2026-07-25-nexus-assistant-pivotal-001/) | 2026-07-25 17:33 BST | NEXUS Assistant cockpit, Room/Drop/LOOM/Forge/connectivity work | 123 Python app tests + 4 native-host tests; Chromium and Firefox builds |
 
 ## Checkpoint contract
