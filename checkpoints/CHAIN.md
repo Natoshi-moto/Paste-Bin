@@ -10,3 +10,4 @@
 Source of truth for ongoing work remains Experimental-Sandbox branch
 `sandbox/experiment/natoshi-assistant-matrix-terminal`. Paste-Bin freezes
 public-safe moments; it does not authorize Lab promotion.
+| 2026-07-25-nexus-assistant-pivotal-003 | Soft-connect MatrixTerminal disk to sandbox spine; publish helper; live PID still old in-memory |
