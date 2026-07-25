@@ -1,0 +1,3 @@
+# Checkpoint trees preserve captured source bytes verbatim. Their SHA-256
+# manifests, not whitespace normalization, detect source drift.
+checkpoints/** -whitespace

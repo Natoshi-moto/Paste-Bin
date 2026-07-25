@@ -1,0 +1,7 @@
+config.json
+history.jsonl
+window_state.json
+__pycache__/
+*.pyc
+.env
+*.env

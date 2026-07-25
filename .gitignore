@@ -1,0 +1,9 @@
+**/__pycache__/
+**/.pytest_cache/
+**/*.pyc
+**/dist/
+**/.env
+**/.env.*
+**/*credential*
+**/*secret*
+!**/PUBLICATION_EXCLUSIONS.md
