@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NEXUS Browser Organ</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <div class="eyebrow">NEXUS · EXTERNAL ORGAN</div>
+      <h1>Browser Handoff</h1>
+      <div id="status" role="status">LOCAL BRIDGE · checking…</div>
+    </header>
+
+    <section class="actions">
+      <button id="capture-selection">PARK SELECTION</button>
+      <button id="capture-page">PARK PAGE EXCERPT</button>
+      <button id="load-context">LOAD ATTACHED CONTEXT</button>
+      <button id="open-chatgpt">OPEN CHATGPT</button>
+    </section>
+
+    <section>
+      <label for="draft">VOICE / HANDOFF DRAFT</label>
+      <textarea
+        id="draft"
+        rows="7"
+        placeholder="Push voice, edit the transcript, then park it. Nothing auto-sends."
+      ></textarea>
+      <div class="row">
+        <button id="voice">START VOICE</button>
+        <button id="park-transcript">PARK TRANSCRIPT</button>
+        <button id="copy">COPY</button>
+      </div>
+    </section>
+
+    <footer>LOCAL HANDOFF · AUTHORITY NONE · USER-TRIGGERED ONLY</footer>
+    <script src="popup.js"></script>
+  </body>
+</html>

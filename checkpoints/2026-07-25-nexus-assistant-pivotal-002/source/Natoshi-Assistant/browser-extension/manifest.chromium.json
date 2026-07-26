@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "NEXUS Browser Organ",
+  "version": "0.1.0",
+  "description": "User-triggered evidence, voice transcript, and ChatGPT context handoff for NEXUS ASSISTANT.",
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "nativeMessaging",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "NEXUS Browser Organ",
+    "default_popup": "popup.html"
+  }
+}

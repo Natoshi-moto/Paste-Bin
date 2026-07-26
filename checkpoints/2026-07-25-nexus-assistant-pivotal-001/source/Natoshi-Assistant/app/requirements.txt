@@ -1,0 +1,3 @@
+# Runtime cryptography for Room, Greywire Drop, and the encrypted LOOM archive.
+# Tkinter is supplied by the Linux distribution rather than PyPI.
+cryptography>=44.0.0,<49

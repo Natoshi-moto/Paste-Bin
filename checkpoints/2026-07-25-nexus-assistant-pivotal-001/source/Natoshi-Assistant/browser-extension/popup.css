@@ -1,0 +1,97 @@
+:root {
+  color-scheme: dark;
+  font-family: "JetBrains Mono", "DejaVu Sans Mono", monospace;
+  background: #05090d;
+  color: #d7fff0;
+}
+
+body {
+  width: 390px;
+  margin: 0;
+  background:
+    radial-gradient(circle at 95% 0%, rgba(75, 220, 255, 0.12), transparent 35%),
+    #05090d;
+}
+
+header,
+section,
+footer {
+  padding: 12px 14px;
+}
+
+header {
+  border-bottom: 1px solid #173241;
+  background: #07141b;
+}
+
+.eyebrow,
+label,
+footer {
+  color: #4bdcff;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+
+h1 {
+  margin: 4px 0 8px;
+  color: #58ffb2;
+  font-size: 19px;
+}
+
+#status {
+  color: #ffc857;
+  font-size: 10px;
+}
+
+.actions {
+  display: grid;
+  gap: 7px;
+}
+
+button {
+  border: 1px solid #29775d;
+  border-radius: 3px;
+  padding: 8px 9px;
+  background: #09131b;
+  color: #58ffb2;
+  font: inherit;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus-visible {
+  border-color: #4bdcff;
+  color: #4bdcff;
+  outline: none;
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 7px;
+  resize: vertical;
+  border: 1px solid #173241;
+  border-radius: 3px;
+  padding: 9px;
+  background: #071017;
+  color: #d7fff0;
+  font: inherit;
+  font-size: 11px;
+}
+
+.row {
+  display: flex;
+  gap: 6px;
+  margin-top: 7px;
+}
+
+.row button {
+  flex: 1;
+}
+
+footer {
+  border-top: 1px solid #173241;
+  color: #29775d;
+}
+
